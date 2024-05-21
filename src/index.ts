@@ -10,7 +10,6 @@ import { initServer } from "./services/http";
  */
 const main = async () => {
 
-
     const botFLow = BotWhatsapp.addKeyword('hola').addAnswer('Buenas!') as any
 
     console.log(botFLow.toJson())
