@@ -27,7 +27,19 @@ export async function runChat(history: StartChatParams["history"], message: stri
         history,
     });
 
+    
     const result = await chatSession.sendMessage(message);
-    console.log(result.response.text());
+    console.log(`HISTORY:\n`)
+    history.map((h) => {
+        h.parts.map((p) => {
+            console.log(p.text)
+        })
+    })
+    console.log({
+        history,
+        message,
+        result: result.response.text(),
+    })
+    return result.response.text();
 }
 

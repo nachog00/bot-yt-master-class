@@ -10,10 +10,10 @@ import nodeFlow from './node.flow';
  */
 export default BotWhatsapp.createFlow(
     [
-        helloFlow,
+        // helloFlow,
         welcomeFlow,
-        paypalFlow,
-        chatbotFlow,
-        nodeFlow
+        // paypalFlow,
+        // chatbotFlow,
+        // nodeFlow
     ]
 )

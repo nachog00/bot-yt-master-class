@@ -4,7 +4,7 @@ const ENDPOINT = process.env?.ENDPOINT ?? 'http://localhost:3000'
 
 // Configurar las credenciales de la API de PayPal
 paypal.configure({
-    mode: process.env.PAYPAL_ENVIRONMENT ?? '',
+    mode: process.env.PAYPAL_ENVIRONMENT ?? 'sandbox',
     client_id: process.env.PAYPAL_ID ?? '',
     client_secret: process.env.PAYPAL_SK ?? '',
 });
